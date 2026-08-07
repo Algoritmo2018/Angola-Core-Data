@@ -1,0 +1,21 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: laravel-sqlite-app
+    container_name: laravel-sqlite-app
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+      - sqlite-data:/var/lib/angola-core-data
+    environment:
+      APP_ENV: local
+      APP_DEBUG: false
+      DB_CONNECTION: sqlite
+      DB_DATABASE: /var/lib/angola-core-data/database.sqlite
+    command: ["sh", "-c", "touch /var/lib/angola-core-data/database.sqlite && exec apache2-foreground"]
+
+volumes:
+  sqlite-data:
