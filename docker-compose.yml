@@ -6,7 +6,7 @@ services:
     image: laravel-sqlite-app
     container_name: laravel-sqlite-app
     ports:
-      - "8000:80"
+      - "8003:80"
     volumes:
       - .:/var/www/html
       - sqlite-data:/var/lib/angola-core-data

@@ -26,7 +26,7 @@
             </style>
 
     <script>
-        var tryItOutBaseUrl = "http://127.0.0.1:8000";
+        var tryItOutBaseUrl = "http://localhost:8003";
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
@@ -172,7 +172,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: August 7, 2026</li>
+        <li>Last updated: October 1, 2026</li>
     </ul>
 </div>
 
@@ -181,7 +181,7 @@
     <div class="content">
         <h1 id="introduction">Introduction</h1>
 <aside>
-    <strong>Base URL</strong>: <code>http://127.0.0.1:8000</code>
+    <strong>Base URL</strong>: <code>http://localhost:8003</code>
 </aside>
 <pre><code>This documentation aims to provide all the information you need to work with our API.
 
@@ -208,14 +208,14 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/user" \
+    --get "http://localhost:8003/api/user" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/user"
+    "http://localhost:8003/api/user"
 );
 
 const headers = {
@@ -335,7 +335,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://127.0.0.1:8000/api/v1/comunes" \
+    "http://localhost:8003/api/v1/comunes" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -347,7 +347,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/comunes"
+    "http://localhost:8003/api/v1/comunes"
 );
 
 const headers = {
@@ -481,14 +481,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/comunes" \
+    --get "http://localhost:8003/api/v1/comunes" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/comunes"
+    "http://localhost:8003/api/v1/comunes"
 );
 
 const headers = {
@@ -616,7 +616,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/v1/comunes/architecto" \
+    "http://localhost:8003/api/v1/comunes/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -628,7 +628,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/comunes/architecto"
+    "http://localhost:8003/api/v1/comunes/architecto"
 );
 
 const headers = {
@@ -775,14 +775,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/v1/comunes/architecto" \
+    "http://localhost:8003/api/v1/comunes/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/comunes/architecto"
+    "http://localhost:8003/api/v1/comunes/architecto"
 );
 
 const headers = {
@@ -899,14 +899,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/comunes/show/deleted" \
+    --get "http://localhost:8003/api/v1/comunes/show/deleted" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/comunes/show/deleted"
+    "http://localhost:8003/api/v1/comunes/show/deleted"
 );
 
 const headers = {
@@ -1034,14 +1034,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/comunes/restore_one/architecto" \
+    --get "http://localhost:8003/api/v1/comunes/restore_one/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/comunes/restore_one/architecto"
+    "http://localhost:8003/api/v1/comunes/restore_one/architecto"
 );
 
 const headers = {
@@ -1174,14 +1174,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/comunes/restore_all" \
+    --get "http://localhost:8003/api/v1/comunes/restore_all" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/comunes/restore_all"
+    "http://localhost:8003/api/v1/comunes/restore_all"
 );
 
 const headers = {
@@ -1302,7 +1302,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://127.0.0.1:8000/api/v1/provinces" \
+    "http://localhost:8003/api/v1/provinces" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -1313,7 +1313,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/provinces"
+    "http://localhost:8003/api/v1/provinces"
 );
 
 const headers = {
@@ -1434,14 +1434,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/provinces" \
+    --get "http://localhost:8003/api/v1/provinces" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/provinces"
+    "http://localhost:8003/api/v1/provinces"
 );
 
 const headers = {
@@ -1471,117 +1471,11 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: &quot;019fdc6a-22a7-72f0-9660-4c412f6ad05a&quot;,
-            &quot;name&quot;: &quot;Zaire&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:31.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2298-733e-bc70-eb598ce16a1f&quot;,
-            &quot;name&quot;: &quot;Uige&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:31.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2288-7374-8456-1e914df22bde&quot;,
-            &quot;name&quot;: &quot;Namibe&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:31.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-227a-71a9-8338-c90a2cc507eb&quot;,
-            &quot;name&quot;: &quot;Moxico Leste&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:31.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2269-73e7-876e-0e8078d31298&quot;,
-            &quot;name&quot;: &quot;Moxico&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-225b-70e8-b116-60a2738b9739&quot;,
-            &quot;name&quot;: &quot;Malanje&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-224b-70b3-b3c1-24af1692aca9&quot;,
-            &quot;name&quot;: &quot;Lunda sul&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-223e-72b6-be5b-279079caf5d0&quot;,
-            &quot;name&quot;: &quot;Lunda norte&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2233-734c-9cba-9d4e009f9655&quot;,
-            &quot;name&quot;: &quot;Luanda&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2223-72f8-8782-8f0273ad14bf&quot;,
-            &quot;name&quot;: &quot;Bengo&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-220e-73cc-ab23-f4ef7a7d4312&quot;,
-            &quot;name&quot;: &quot;Icolo&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2200-736e-926d-142efca5270d&quot;,
-            &quot;name&quot;: &quot;Hu&iacute;la&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-21ef-732e-a833-4e9c6dff7cab&quot;,
-            &quot;name&quot;: &quot;Cunene&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-21da-7323-9a00-22b550fe445f&quot;,
-            &quot;name&quot;: &quot;Cuanza sul&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-21c2-7369-b211-2f0c4ba9ca4f&quot;,
-            &quot;name&quot;: &quot;Cuanza norte&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        }
-    ],
+    &quot;data&quot;: [],
     &quot;meta&quot;: {
-        &quot;total&quot;: 21,
+        &quot;total&quot;: 0,
         &quot;is_first_page&quot;: true,
-        &quot;is_last_page&quot;: false,
+        &quot;is_last_page&quot;: true,
         &quot;current_page&quot;: 1,
         &quot;next_page&quot;: 2,
         &quot;previous_page&quot;: 0
@@ -1675,7 +1569,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/v1/provinces/019fdc6a-2162-722d-8b1a-83c2ab789944" \
+    "http://localhost:8003/api/v1/provinces/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -1686,7 +1580,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/provinces/019fdc6a-2162-722d-8b1a-83c2ab789944"
+    "http://localhost:8003/api/v1/provinces/architecto"
 );
 
 const headers = {
@@ -1787,10 +1681,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="PUTapi-v1-provinces--id-"
-               value="019fdc6a-2162-722d-8b1a-83c2ab789944"
+               value="architecto"
                data-component="url">
     <br>
-<p>The ID of the province. Example: <code>019fdc6a-2162-722d-8b1a-83c2ab789944</code></p>
+<p>The ID of the province. Example: <code>architecto</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1820,14 +1714,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/provinces/restore_one/architecto" \
+    --get "http://localhost:8003/api/v1/provinces/restore_one/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/provinces/restore_one/architecto"
+    "http://localhost:8003/api/v1/provinces/restore_one/architecto"
 );
 
 const headers = {
@@ -1960,14 +1854,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/provinces/restore_all" \
+    --get "http://localhost:8003/api/v1/provinces/restore_all" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/provinces/restore_all"
+    "http://localhost:8003/api/v1/provinces/restore_all"
 );
 
 const headers = {
@@ -2085,14 +1979,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/provinces/show/deleted" \
+    --get "http://localhost:8003/api/v1/provinces/show/deleted" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/provinces/show/deleted"
+    "http://localhost:8003/api/v1/provinces/show/deleted"
 );
 
 const headers = {
@@ -2220,14 +2114,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/v1/provinces/019fdc6a-2162-722d-8b1a-83c2ab789944" \
+    "http://localhost:8003/api/v1/provinces/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/provinces/019fdc6a-2162-722d-8b1a-83c2ab789944"
+    "http://localhost:8003/api/v1/provinces/architecto"
 );
 
 const headers = {
@@ -2324,10 +2218,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="DELETEapi-v1-provinces--id-"
-               value="019fdc6a-2162-722d-8b1a-83c2ab789944"
+               value="architecto"
                data-component="url">
     <br>
-<p>The ID of the province. Example: <code>019fdc6a-2162-722d-8b1a-83c2ab789944</code></p>
+<p>The ID of the province. Example: <code>architecto</code></p>
             </div>
                     </form>
 
@@ -2344,7 +2238,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://127.0.0.1:8000/api/v1/municipalities" \
+    "http://localhost:8003/api/v1/municipalities" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -2356,7 +2250,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/municipalities"
+    "http://localhost:8003/api/v1/municipalities"
 );
 
 const headers = {
@@ -2490,14 +2384,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/municipalities" \
+    --get "http://localhost:8003/api/v1/municipalities" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/municipalities"
+    "http://localhost:8003/api/v1/municipalities"
 );
 
 const headers = {
@@ -2625,7 +2519,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/v1/municipalities/architecto" \
+    "http://localhost:8003/api/v1/municipalities/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -2637,7 +2531,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/municipalities/architecto"
+    "http://localhost:8003/api/v1/municipalities/architecto"
 );
 
 const headers = {
@@ -2784,14 +2678,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/v1/municipalities/architecto" \
+    "http://localhost:8003/api/v1/municipalities/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/municipalities/architecto"
+    "http://localhost:8003/api/v1/municipalities/architecto"
 );
 
 const headers = {
@@ -2908,14 +2802,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/municipalities/show/deleted" \
+    --get "http://localhost:8003/api/v1/municipalities/show/deleted" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/municipalities/show/deleted"
+    "http://localhost:8003/api/v1/municipalities/show/deleted"
 );
 
 const headers = {
@@ -3043,14 +2937,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/municipalities/restore_one/architecto" \
+    --get "http://localhost:8003/api/v1/municipalities/restore_one/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/municipalities/restore_one/architecto"
+    "http://localhost:8003/api/v1/municipalities/restore_one/architecto"
 );
 
 const headers = {
@@ -3183,14 +3077,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/municipalities/restore_all" \
+    --get "http://localhost:8003/api/v1/municipalities/restore_all" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/municipalities/restore_all"
+    "http://localhost:8003/api/v1/municipalities/restore_all"
 );
 
 const headers = {
@@ -3308,7 +3202,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://127.0.0.1:8000/api/v1/banks" \
+    "http://localhost:8003/api/v1/banks" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -3322,7 +3216,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/banks"
+    "http://localhost:8003/api/v1/banks"
 );
 
 const headers = {
@@ -3482,7 +3376,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/v1/banks/architecto" \
+    "http://localhost:8003/api/v1/banks/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -3497,7 +3391,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/banks/architecto"
+    "http://localhost:8003/api/v1/banks/architecto"
 );
 
 const headers = {
@@ -3683,7 +3577,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/v1/banks/architecto" \
+    "http://localhost:8003/api/v1/banks/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -3694,7 +3588,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/banks/architecto"
+    "http://localhost:8003/api/v1/banks/architecto"
 );
 
 const headers = {
@@ -3828,14 +3722,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/banks" \
+    --get "http://localhost:8003/api/v1/banks" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/banks"
+    "http://localhost:8003/api/v1/banks"
 );
 
 const headers = {
@@ -3865,162 +3759,11 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: &quot;019fdc6a-1f63-73cb-9c64-8da09ed09129&quot;,
-            &quot;bank_name&quot;: &quot;Banco Angolano de Investimentos S.A.&quot;,
-            &quot;short_name&quot;: &quot;BAI&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0040&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-1ff1-711f-a0bc-f5b002060d9e&quot;,
-            &quot;bank_name&quot;: &quot;Banco Yetu S.A.&quot;,
-            &quot;short_name&quot;: &quot;YETU&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0066&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-1ffd-71b5-bca9-c786752842b1&quot;,
-            &quot;bank_name&quot;: &quot;Banco Angolano de Neg&oacute;cios e Com&eacute;rcio&quot;,
-            &quot;short_name&quot;: &quot;BANC&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0053&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-200a-7085-afb2-e6bf5586796a&quot;,
-            &quot;bank_name&quot;: &quot;Banco BAI Micro Finan&ccedil;as S.A.&quot;,
-            &quot;short_name&quot;: &quot;BMF&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0048&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2014-7286-b6eb-8f2679c10ccb&quot;,
-            &quot;bank_name&quot;: &quot;Banco BIC Angola&quot;,
-            &quot;short_name&quot;: &quot;BIC&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0051&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2020-72a4-8da8-b6f348e2246b&quot;,
-            &quot;bank_name&quot;: &quot;Banco Caixa Geral Angola (Totta) S.A.&quot;,
-            &quot;short_name&quot;: &quot;BCGA&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0004&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-202b-72bb-9110-239dfd1d5999&quot;,
-            &quot;bank_name&quot;: &quot;Banco Comercial Angolano S.A.&quot;,
-            &quot;short_name&quot;: &quot;BCA&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0043&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2035-702e-a21c-88323358db46&quot;,
-            &quot;bank_name&quot;: &quot;Banco Comercial do Huambo S.A.&quot;,
-            &quot;short_name&quot;: &quot;BCH&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0059&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2042-72df-bde0-b2c61aa5a0b3&quot;,
-            &quot;bank_name&quot;: &quot;Banco de Com&eacute;rcio e Ind&uacute;stria S.A.&quot;,
-            &quot;short_name&quot;: &quot;BCI&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0005&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-204e-72bd-a2cc-9480c045cd09&quot;,
-            &quot;bank_name&quot;: &quot;Banco de Desenvolvimento de Angola S.A.&quot;,
-            &quot;short_name&quot;: &quot;BDA&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0054&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2058-711a-b5f2-4780e0bf513b&quot;,
-            &quot;bank_name&quot;: &quot;Banco de Fomento Angola S.A.&quot;,
-            &quot;short_name&quot;: &quot;BFA&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0006&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2064-70df-b575-62d7f7624b9a&quot;,
-            &quot;bank_name&quot;: &quot;Banco de Investimento Rural S.A.&quot;,
-            &quot;short_name&quot;: &quot;BIR&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0067&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-206d-707d-8681-5df25581e468&quot;,
-            &quot;bank_name&quot;: &quot;Banco de Neg&oacute;cios Internacional S.A.&quot;,
-            &quot;short_name&quot;: &quot;BNI&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0052&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-207a-73a4-855b-b20c87caac7e&quot;,
-            &quot;bank_name&quot;: &quot;Banco de Poupan&ccedil;a e Cr&eacute;dito S.A.&quot;,
-            &quot;short_name&quot;: &quot;BPC&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0010&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        },
-        {
-            &quot;id&quot;: &quot;019fdc6a-2086-70f9-af4e-784f55a2a1c5&quot;,
-            &quot;bank_name&quot;: &quot;Banco Econ&oacute;mico (Angola)&quot;,
-            &quot;short_name&quot;: &quot;BE&quot;,
-            &quot;country_prefix&quot;: &quot;AO06&quot;,
-            &quot;bank_prefix&quot;: &quot;0045&quot;,
-            &quot;created_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2026-08-07T13:29:30.000000Z&quot;,
-            &quot;deleted_at&quot;: null
-        }
-    ],
+    &quot;data&quot;: [],
     &quot;meta&quot;: {
-        &quot;total&quot;: 29,
+        &quot;total&quot;: 0,
         &quot;is_first_page&quot;: true,
-        &quot;is_last_page&quot;: false,
+        &quot;is_last_page&quot;: true,
         &quot;current_page&quot;: 1,
         &quot;next_page&quot;: 2,
         &quot;previous_page&quot;: 0
@@ -4114,14 +3857,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/banks/flat/trash/can" \
+    --get "http://localhost:8003/api/v1/banks/flat/trash/can" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/banks/flat/trash/can"
+    "http://localhost:8003/api/v1/banks/flat/trash/can"
 );
 
 const headers = {
@@ -4249,14 +3992,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/v1/banks/restore/all" \
+    --get "http://localhost:8003/api/v1/banks/restore/all" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/banks/restore/all"
+    "http://localhost:8003/api/v1/banks/restore/all"
 );
 
 const headers = {
@@ -4377,7 +4120,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/v1/banks/recover/one/architecto" \
+    "http://localhost:8003/api/v1/banks/recover/one/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -4388,7 +4131,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/banks/recover/one/architecto"
+    "http://localhost:8003/api/v1/banks/recover/one/architecto"
 );
 
 const headers = {
@@ -4522,7 +4265,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/v1/banks/permanently/delete/architecto" \
+    "http://localhost:8003/api/v1/banks/permanently/delete/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -4533,7 +4276,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/v1/banks/permanently/delete/architecto"
+    "http://localhost:8003/api/v1/banks/permanently/delete/architecto"
 );
 
 const headers = {
