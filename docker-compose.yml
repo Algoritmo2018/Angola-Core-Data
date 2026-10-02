@@ -1,21 +1,33 @@
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: laravel-sqlite-app
-    container_name: chilembo-core-data
-    ports:
-      - "8003:80"
-    volumes:
-      - .:/var/www/html
-      - sqlite-data:/var/lib/angola-core-data
-    environment:
-      APP_ENV: local
-      APP_DEBUG: false
-      DB_CONNECTION: sqlite
-      DB_DATABASE: /var/lib/angola-core-data/database.sqlite
-    command: ["sh", "-c", "touch /var/lib/angola-core-data/database.sqlite && exec apache2-foreground"]
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: laravel-sqlite-app
+        container_name: chilembo-core-data
+        ports:
+            - "8003:80"
+        volumes:
+            - .:/var/www/html
+            - sqlite-data:/var/lib/angola-core-data
+        environment:
+            APP_ENV: local
+            APP_DEBUG: "false"
+            APP_URL: http://localhost:8003
+            DB_CONNECTION: sqlite
+            DB_DATABASE: /var/lib/angola-core-data/database.sqlite
+            CACHE_STORE: file
+            SESSION_DRIVER: file
+            QUEUE_CONNECTION: sync
+        command: sh -c "composer install --no-interaction --prefer-dist --optimize-autoloader && touch /var/lib/angola-core-data/database.sqlite && exec apache2-foreground"
+        restart: unless-stopped
+        networks:
+            - shared-services-network
 
 volumes:
-  sqlite-data:
+    sqlite-data:
+
+networks:
+    shared-services-network:
+        external: true
+        name: shared-services-network
