@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: laravel-sqlite-app
-    container_name: laravel-sqlite-app
+    container_name: chilembo-core-data
     ports:
       - "8003:80"
     volumes:
